@@ -693,6 +693,22 @@ a {
   padding: 20px 30px;
 }
 
+.details_right span {
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+.details_right .form-control {
+  border-radius: 0px;
+  margin-top: 12px;
+  box-shadow: inset 0 -1px 1px rgb(100 221 187 / 45%);
+}
+
+.details_right .form-control:focus {
+  box-shadow: none;
+  border: 1px solid var(--themeBg);
+}
+
 .preference_widget {
   padding-top: 35px;
 }
