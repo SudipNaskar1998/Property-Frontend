@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: var(--footerBg);
+}
+
 h1,
 h2,
 h3,
@@ -40,6 +44,39 @@ a {
   --textColor: #8993A4;
   --footerBg: #151C22;
 }
+
+/* login page css */
+
+.ph_or_email hr {
+  flex-grow: 1;
+  border: 1px solid var(--textColor);
+}
+
+.ph_or_email span {
+  margin: 0px 15px;
+}
+
+.continue_email button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  background: var(--colorWhite);
+  border: 1px solid var(--textColor);
+  justify-content: center;
+  padding: 8px 0px;
+}
+
+.terms_con p {
+  line-height: 15px;
+  font-size: 11px;
+}
+
+.terms_con p a {
+  color: blue;
+}
+
+/* banner sec */
 
 .banner-sec {
   overflow: hidden;

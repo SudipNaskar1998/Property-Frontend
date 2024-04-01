@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../Header/Header.css";
 import { Link, useLocation } from "react-router-dom";
+import LoginModal from "../LoginModal";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+
   let location = useLocation();
   let path = location?.pathname;
   return (
@@ -122,17 +125,20 @@ const Header = () => {
                             </li>
                           </ul>
                         </li> */}
-                        <Link className="post_properties">
+                        <Link to="/details" className="post_properties">
                           Post your property
                         </Link>
                         <li>
                           {path === "/" ? (
-                            <Link to="/" className="nav-link">
+                            <Link
+                              onClick={() => setShow(true)}
+                              className="nav-link"
+                            >
                               Login
                             </Link>
                           ) : (
                             <Link
-                              to="/"
+                              onClick={() => setShow(true)}
                               className="nav-link"
                               style={{ color: "#000" }}
                             >
@@ -149,6 +155,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {show && <LoginModal show={show} setShow={setShow} />}
     </>
   );
 };

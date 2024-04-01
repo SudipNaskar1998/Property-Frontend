@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const Home = () => {
@@ -133,43 +134,49 @@ const Home = () => {
                 <div className="col-sm-12">
                   <Slider {...recommended}>
                     <div className="cards_main">
-                      <div className="cards_img">
-                        <img
-                          src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="cards-content">
-                        <h5>Folium By Sumadhura Phase 2</h5>
-                        <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
-                        <span>₹ 2.11 - 3.59 Crore</span>
-                      </div>
+                      <Link to="/properties-view">
+                        <div className="cards_img">
+                          <img
+                            src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="cards-content">
+                          <h5>Folium By Sumadhura Phase 2</h5>
+                          <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
+                          <span>₹ 2.11 - 3.59 Crore</span>
+                        </div>
+                      </Link>
                     </div>
                     <div className="cards_main">
-                      <div className="cards_img">
-                        <img
-                          src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="cards-content">
-                        <h5>Folium By Sumadhura Phase 2</h5>
-                        <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
-                        <span>₹ 2.11 - 3.59 Crore</span>
-                      </div>
+                      <Link to="/properties-view">
+                        <div className="cards_img">
+                          <img
+                            src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="cards-content">
+                          <h5>Folium By Sumadhura Phase 2</h5>
+                          <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
+                          <span>₹ 2.11 - 3.59 Crore</span>
+                        </div>
+                      </Link>
                     </div>
                     <div className="cards_main">
-                      <div className="cards_img">
-                        <img
-                          src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="cards-content">
-                        <h5>Folium By Sumadhura Phase 2</h5>
-                        <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
-                        <span>₹ 2.11 - 3.59 Crore</span>
-                      </div>
+                      <Link to="/properties-view">
+                        <div className="cards_img">
+                          <img
+                            src="https://newprojects.99acres.com/projects/sumadhura_group/folium_by_sumadhura_phase_2/images/lm4etk0r_med.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="cards-content">
+                          <h5>Folium By Sumadhura Phase 2</h5>
+                          <p>3,4 BHK Apartment in Whitefield, Bangalore East</p>
+                          <span>₹ 2.11 - 3.59 Crore</span>
+                        </div>
+                      </Link>
                     </div>
                     <div className="cards_main">
                       <div className="cards_img">
@@ -200,30 +207,36 @@ const Home = () => {
                       <div className="apartments">
                         <h4>Residential Apartment </h4>
                         <p>4,600+ Properties</p>
-                        <img
-                          src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
-                          alt=""
-                        />
+                        <Link to="/properties-view">
+                          <img
+                            src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
+                            alt=""
+                          />
+                        </Link>
                       </div>
                     </div>
                     <div className="px-2">
                       <div className="apartments">
                         <h4>Residential Apartment </h4>
                         <p>4,600+ Properties</p>
-                        <img
-                          src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
-                          alt=""
-                        />
+                        <Link to="/properties-view">
+                          <img
+                            src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
+                            alt=""
+                          />
+                        </Link>
                       </div>
                     </div>
                     <div className="px-2">
                       <div className="apartments">
                         <h4>Residential Apartment </h4>
                         <p>4,600+ Properties</p>
-                        <img
-                          src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
-                          alt=""
-                        />
+                        <Link to="/properties-view">
+                          <img
+                            src="https://static.99acres.com/universalhp/img/d_hp_property_type_2.webp"
+                            alt=""
+                          />
+                        </Link>
                       </div>
                     </div>
                   </Slider>
