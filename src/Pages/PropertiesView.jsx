@@ -310,7 +310,9 @@ const PropertiesView = () => {
                               alt=""
                             />
                           </Slider>
-                          <div className="inner_card_img_inner"></div>
+                          <Link to="/single-view">
+                            <div className="inner_card_img_inner"></div>
+                          </Link>
                         </div>
                       </div>
                       <div className="col-sm-7">
@@ -379,7 +381,9 @@ const PropertiesView = () => {
                               alt=""
                             />
                           </Slider>
-                          <div className="inner_card_img_inner"></div>
+                          <Link to="/single-view">
+                            <div className="inner_card_img_inner"></div>
+                          </Link>
                         </div>
                       </div>
                       <div className="col-sm-7">
