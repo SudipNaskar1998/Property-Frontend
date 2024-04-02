@@ -8,6 +8,7 @@ const Header = () => {
 
   let location = useLocation();
   let path = location?.pathname;
+
   return (
     <>
       <div className="site-mobile-menu site-navbar-target">
@@ -24,7 +25,7 @@ const Header = () => {
         <div
           className={
             path === "/" || path === "/properties-view"
-              ? "site-navbar site-navbar-target js-sticky-header"
+              ? "site-navbar site-navbar-target  js-sticky-header"
               : "site-navbar site-navbar-target js-sticky-header bg-white"
           }
         >
@@ -55,13 +56,62 @@ const Header = () => {
                     <div className="container">
                       <div className="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
                         <Link
-                          to="/"
-                          className="site-menu-toggle js-menu-toggle text-white"
+                          className="btn"
+                          // type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasScrolling"
+                          aria-controls="offcanvasScrolling"
                         >
                           <span className="icon-menu h3">
                             <i className="fa-solid fa-bars"></i>
                           </span>
                         </Link>
+                      </div>
+                      <div
+                        className="offcanvas offcanvas-start"
+                        data-bs-scroll="true"
+                        data-bs-backdrop="false"
+                        tabIndex="-1"
+                        id="offcanvasScrolling"
+                        aria-labelledby="offcanvasScrollingLabel"
+                      >
+                        <div className="offcanvas-header">
+                          <h5
+                            className="offcanvas-title"
+                            id="offcanvasScrollingLabel"
+                          >
+                            &nbsp;
+                          </h5>
+                          <button
+                            type="button"
+                            className="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div className="offcanvas-body">
+                          <Link to="/details" className="post_properties">
+                            Post your property
+                          </Link>
+                          <li className="mt-3">
+                            {path === "/" ? (
+                              <Link
+                                onClick={() => setShow(true)}
+                                className="nav-link"
+                              >
+                                Login
+                              </Link>
+                            ) : (
+                              <Link
+                                onClick={() => setShow(true)}
+                                className="nav-link"
+                                style={{ color: "#000" }}
+                              >
+                                Login
+                              </Link>
+                            )}
+                          </li>
+                        </div>
                       </div>
                       <ul className="site-menu main-menu js-clone-nav d-none d-lg-block text-right">
                         {/* <li className="has-children">
